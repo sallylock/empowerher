@@ -4,35 +4,57 @@
   <title>EM-POWER HER</title>
   <style>
     body {
+      margin: 0;
       background-color: navy;
       color: #FFD700;
       text-align: center;
       font-family: Arial, sans-serif;
     }
 
+    /* 🔥 상단 고정 네비게이션 */
     nav {
-      margin: 20px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #000080;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
     }
 
+    /* 🔥 버튼 스타일 */
     nav a {
-      margin: 0 15px;
+      margin: 0 10px;
+      padding: 8px 15px;
       text-decoration: none;
       color: #FFD700;
       font-weight: bold;
-      font-size: 18px;
+      border: 2px solid #FFD700;
+      border-radius: 20px;
+      transition: all 0.3s ease;
     }
 
+    /* 🔥 hover 효과 */
     nav a:hover {
-      text-decoration: underline;
+      background-color: #FFD700;
+      color: navy;
     }
+
+    /* 🔥 본문이 네비게이션에 안 가려지게 */
+    .content {
+      padding-top: 100px;
+    }
+
+    img {
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+
   </style>
 </head>
 <body>
 
-  <h1>EM-POWER HER</h1>
-
-  <p>Empower Her, Empowered Us</p>
-
+  <!-- 네비게이션 -->
   <nav>
     <a href="about.html">About</a>
     <a href="members.html">Members</a>
@@ -42,9 +64,16 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <br><br>
+  <!-- 본문 -->
+  <div class="content">
 
-  <img src="uranium_oxide.jpg" width="450">
+    <h1>EM-POWER HER</h1>
+
+    <p>Empower Her, Empowered Us</p>
+
+    <img src="./uranium_oxide.jpg" width="450">
+
+  </div>
 
 </body>
 </html>
