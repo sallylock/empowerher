@@ -2,56 +2,85 @@
 <html>
 <head>
   <title>EM-POWER HER</title>
+
+  <!-- 🔥 세련된 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      background-color: navy;
+      background-color: #0a0a8f; /* 더 고급스러운 남색 */
       color: #FFD700;
-      text-align: center;
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
     }
 
-    /* 🔥 상단 고정 네비게이션 */
+    /* 🔥 상단 네비게이션 */
     nav {
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: #000080;
-      padding: 15px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 18px 0;
+      background-color: rgba(10,10,143,0.9);
+      backdrop-filter: blur(10px);
       z-index: 1000;
     }
 
-    /* 🔥 버튼 스타일 */
     nav a {
-      margin: 0 10px;
-      padding: 8px 15px;
+      padding: 8px 16px;
       text-decoration: none;
       color: #FFD700;
-      font-weight: bold;
-      border: 2px solid #FFD700;
-      border-radius: 20px;
-      transition: all 0.3s ease;
+      font-weight: 500;
+      border: 1.5px solid #FFD700;
+      border-radius: 999px;
+      font-size: 14px;
+      transition: all 0.25s ease;
     }
 
-    /* 🔥 hover 효과 */
     nav a:hover {
       background-color: #FFD700;
-      color: navy;
+      color: #0a0a8f;
     }
 
-    /* 🔥 본문이 네비게이션에 안 가려지게 */
-    .content {
-      padding-top: 100px;
+    /* 🔥 메인 영역 */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
     }
 
-    img {
-      margin-top: 30px;
-      border-radius: 10px;
+    /* 🔥 타이틀 (핵심 포인트) */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    /* 🔥 서브텍스트 */
+    p {
+      font-size: 16px;
+      opacity: 0.85;
+      margin-bottom: 40px;
+    }
+
+    /* 🔥 이미지 */
+    .hero img {
+      width: 500px;
+      max-width: 90%;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
 
   </style>
 </head>
+
 <body>
 
   <!-- 네비게이션 -->
@@ -64,14 +93,14 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- 본문 -->
-  <div class="content">
+  <!-- 메인 (Hero Section) -->
+  <div class="hero">
 
     <h1>EM-POWER HER</h1>
 
     <p>Empower Her, Empowered Us</p>
 
-    <img src="./uranium_oxide.jpg" width="450">
+    <img src="./uranium_oxide.jpg">
 
   </div>
 
