@@ -2,63 +2,96 @@ body {
   margin: 0;
   background-color: #0a0a8f;
   color: #FFD700;
-  font-family: 'Inter', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
+/* 🔥 네비게이션 (고정) */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0;
+  background-color: rgba(10,10,143,0.95);
+  z-index: 1000;
+}
+
+nav a {
+  padding: 6px 14px;
+  text-decoration: none;
+  color: #FFD700;
+  border: 1.5px solid #FFD700;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  background-color: #FFD700;
+  color: #0a0a8f;
+}
+
+/* 🔥 본문 */
+.container {
+  padding-top: 100px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* 🔥 카드 배치 */
 .grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
 }
 
+/* 🔥 카드 */
 .card {
   width: 450px;
+  height: 250px; /* 👉 명함 비율 */
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
+
   background-color: rgba(255,255,255,0.05);
-  border-radius: 16px;
-  padding: 18px;
+  border-radius: 12px;
+  padding: 15px;
+
   position: relative;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+/* 🔥 사진 */
+.card img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-/* 🔥 사진 영역 */
-.img-box {
-  flex-shrink: 0;
-}
-
-.img-box img {
-  width: 120px;       /* 👉 크기만 제한 */
-  height: auto;       /* 👉 비율 유지 핵심 */
-  border-radius: 12px;
-}
-
-/* 🔥 오른쪽 정보 */
+/* 🔥 텍스트 */
 .info {
   text-align: left;
-  flex: 1;
 }
 
 .name {
-  font-weight: 600;
   font-size: 18px;
-  margin-bottom: 3px;
+  font-weight: bold;
 }
 
 .role {
   font-size: 14px;
-  opacity: 0.8;
   margin-bottom: 8px;
+  opacity: 0.8;
 }
 
 ul {
-  padding-left: 18px;
   margin: 0;
+  padding-left: 18px;
   font-size: 13px;
 }
 
@@ -71,7 +104,7 @@ ul {
 
 .top-links a {
   margin-left: 8px;
-  font-size: 14px;
   text-decoration: none;
+  font-size: 14px;
   color: #FFD700;
 }
