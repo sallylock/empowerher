@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background-color: #0a0a8f;
+  color: #FFD700;
+  font-family: 'Inter', sans-serif;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  width: 450px;
+  display: flex;
+  gap: 20px;
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 18px;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* 🔥 사진 영역 */
+.img-box {
+  flex-shrink: 0;
+}
+
+.img-box img {
+  width: 120px;       /* 👉 크기만 제한 */
+  height: auto;       /* 👉 비율 유지 핵심 */
+  border-radius: 12px;
+}
+
+/* 🔥 오른쪽 정보 */
+.info {
+  text-align: left;
+  flex: 1;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.role {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+ul {
+  padding-left: 18px;
+  margin: 0;
+  font-size: 13px;
+}
+
+/* 🔥 우측 상단 버튼 */
+.top-links {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+}
+
+.top-links a {
+  margin-left: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #FFD700;
+}
